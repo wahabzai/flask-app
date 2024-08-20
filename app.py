@@ -1,5 +1,6 @@
 from flask import Flask
 from redis import Redis
+import os
 
 app = Flask(__name__)
 redis_host = os.getenv('REDIS_HOST', 'localhost')
