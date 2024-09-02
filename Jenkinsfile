@@ -36,9 +36,9 @@ pipeline {
             steps {
                 sh '''
                 cd /var/lib/jenkins/workspace/Flask-app
-                docker compose down
-                docker compose pull
-                docker compose up -d
+                docker-compose down
+                docker-compose pull
+                docker-compose up -d
                 '''
             }
         }
